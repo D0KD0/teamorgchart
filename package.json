@@ -1,0 +1,22 @@
+{
+  "name": "teamorgchart",
+  "version": "1.0.0",
+  "description": "Team org chart",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D0KD0/teamorgchart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D0KD0/teamorgchart/issues"
+  },
+  "homepage": "https://github.com/D0KD0/teamorgchart#readme"
+}
