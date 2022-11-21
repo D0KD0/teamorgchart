@@ -19,7 +19,7 @@
         <header>
             <h1 class="p-3 mb-2 bg-success text-white">My Team</h1>
         </header>
-    <main>
+
     `
   };
   
@@ -81,10 +81,7 @@
   
   const closingHTML = () => {
     return `
-        </main>
-        <footer>
-            <p id="footer">Made by D0KD0</p>
-        </footer>
+
         
         <script type="text/javascript" src="./js/bootstrap.js"></script>
 

@@ -180,23 +180,23 @@ const promptIntern = () => {
 };
 
 const writeInit = () => {
-    fs.appendFile('./dist/index.html', PageTemplate.generateInit(), (err) => err? console.error(err) : console.log('Create your team chart!'));
+    fs.appendFile('./dist/index.html', PageTemplate.generateInit(), (err) => err? console.error(err) : console.log('Create your team chart!'))
 }
 
 const inputManager = (employees) => {
-    fs.appendFile('./dist/index.html', PageTemplate.generateManager(employees), (err) => err? console.error(err) : console.log('Successfully added'));
+    fs.appendFile('./dist/index.html', PageTemplate.generateManager(employees), (err) => err? console.error(err) : console.log('Successfully added'))
 }
 
 const inputEngineer = (employees) => {
-    fs.appendFile('./dist/index.html', PageTemplate.generateEngineer(employees), (err) => err? console.error(err) : console.log('Successfully added'));
+    fs.appendFile('./dist/index.html', PageTemplate.generateEngineer(employees), (err) => err? console.error(err) : console.log('Successfully added'))
 }
 
 const inputIntern = (employees) => {
-    fs.appendFile('./dist/index.html', PageTemplate.generateIntern(employees), (err) => err? console.error(err) : console.log('Successfully added'));
+    fs.appendFile('./dist/index.html', PageTemplate.generateIntern(employees), (err) => err? console.error(err) : console.log('Successfully added'))
 }
 
-const writeClose = (employees) => {
-    fs.appendFile('./dist/index.html', PageTemplate.closingHTML(employees), (err) => err? console.error(err) : console.log('Team chart created'));
+const writeClose = () => {
+    fs.appendFile('./dist/index.html', PageTemplate.closingHTML(), (err) => err? console.error(err) : console.log('Team chart created'))
 }
 
 
