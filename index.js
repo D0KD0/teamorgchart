@@ -179,6 +179,7 @@ const promptIntern = () => {
     })
 };
 
+
 const writeInit = () => {
     fs.appendFile('./dist/index.html', PageTemplate.generateInit(), (err) => err? console.error(err) : console.log('Create your team chart!'))
 }
