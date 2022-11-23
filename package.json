@@ -1,7 +1,7 @@
 {
   "name": "teamorgchart",
   "version": "1.0.0",
-  "description": "Team org chart",
+  "description": "Team org chart creator",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/D0KD0/teamorgchart.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "D0KD0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/D0KD0/teamorgchart/issues"
   },

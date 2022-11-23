@@ -132,7 +132,6 @@ const promptManager = () => {
 };
 
 const promptEngineer = () => {
-    writeInit();
     inquirer.prompt(questionForEngineer)
     .then((res) => {
         const {name, id, email, github} = res;
@@ -156,7 +155,6 @@ const promptEngineer = () => {
 };
 
 const promptIntern = () => {
-    writeInit();
     inquirer.prompt(questionForIntern)
     .then((res) => {
         const {name, id, email, school} = res;
@@ -181,7 +179,7 @@ const promptIntern = () => {
 
 
 const writeInit = () => {
-    fs.appendFile('./dist/index.html', PageTemplate.generateInit(), (err) => err? console.error(err) : console.log('Create your team chart!'))
+    fs.writeFile('./dist/index.html', PageTemplate.generateInit(), (err) => err? console.error(err) : console.log('Create your team chart! press any arrow key'))
 }
 
 const inputManager = (employees) => {

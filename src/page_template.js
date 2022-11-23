@@ -20,19 +20,23 @@
             <h1 class="p-3 mb-2 bg-success text-white">My Team</h1>
         </header>
 
+    <main>
+    <section class="d-flex p-2 bd-highlight">
+
     `
   };
   
   const generateManager = (manager) => {
   
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 23rem;">
       <div class="card-body">
           <h5 class="card-title">${manager.getName()}</h5>
           <h6 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
           <ul class="list-group list-group-flush">
           <li class="list-group-item">Id : ${manager.getId()}</li>
-          <li class="list-group-item">Email : ${manager.getEmail()}</li>
+          <li class="list-group-item">Email : <a href="mailto:${manager.getEmail()}? subject=subject text" target="_blank">${manager.getEmail()}</a></li>
+          </li>
           <li class="list-group-item">Office number: ${manager.getofficeNumber()}</li>
           </ul>
       </div>
@@ -43,14 +47,14 @@
   const generateEngineer = (Engineer) => {
 
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 23rem;">
       <div class="card-body">
         <h5 class="card-title">${Engineer.getName()}</h5>
         <h6 class="card-subtitle mb-2 text-muted">${Engineer.getRole()}</h6>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Id : ${Engineer.getId()}</li>
-          <li class="list-group-item">Email : ${Engineer.getEmail()}</li>
-          <li class="list-group-item">GitHub: ${Engineer.getGithub()}</li>
+          <li class="list-group-item">Email : <a href="mailto:${Engineer.getEmail()}? subject=subject text" target="_blank">${Engineer.getEmail()}</a></li>
+          <li class="list-group-item">GitHub: <a href="http://github.com/${Engineer.getGithub()}/" target="_blank">${Engineer.getGithub()}</a></li>
         </ul>
       </div>
     </div>
@@ -62,13 +66,13 @@
   const generateIntern = (Intern) => {
 
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 23rem;">
       <div class="card-body">
         <h5 class="card-title">${Intern.getName()}</h5>
         <h6 class="card-subtitle mb-2 text-muted">${Intern.getRole()}</h6>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Id : ${Intern.getId()}</li>
-          <li class="list-group-item">Email : ${Intern.getEmail()}</li>
+          <li class="list-group-item">Email : <a href="mailto:${Intern.getEmail()}? subject=subject text" target="_blank">${Intern.getEmail()}</a></li>
           <li class="list-group-item">School: ${Intern.getSchool()}</li>
         </ul>
       </div>
@@ -81,11 +85,12 @@
   
   const closingHTML = () => {
     return `
-
-        
+    
+     </section>
+     </main>
         <script type="text/javascript" src="./js/bootstrap.js"></script>
 
-        </body>
+      </body>
     </html>
     `
   }
