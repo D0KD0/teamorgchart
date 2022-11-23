@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/D0KD0/teamorgchart/issues"
   },
-  "homepage": "https://github.com/D0KD0/teamorgchart#readme"
+  "homepage": "https://github.com/D0KD0/teamorgchart#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }

@@ -5,5 +5,13 @@ In this project, I created team org chart creator by using JavaScript. If you an
 ## Video Walkthrough
 <img src="src/walkthroughvideo.gif" />
 
+## Test Video
+<img src="src/test.gif" />
+
 ## Preview
 <img src="src/screenshot.png" />
+
+## Lesson Learned
+* Be aware of typos
+* Make sure to update estimated answers as you change
+* Install jest (npm install jest --save-dev) before use "npm run test"

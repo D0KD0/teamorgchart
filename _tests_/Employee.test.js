@@ -5,9 +5,9 @@ describe("Employee", () => {
         it("Return employee's name, id, and email", () => {
             const rm = new Employee('RM', '100', 'rapmonster@gmail.com');
 
-            expect(rm.getName()).toEuqal('RM');
+            expect(rm.getName()).toEqual('RM');
             expect(rm.getId()).toEqual('100');
-            except(rm.getEmail()).toEqual('rapmonster@gmail.com');
+            expect(rm.getEmail()).toEqual('rapmonster@gmail.com');
         });
     });
 });
